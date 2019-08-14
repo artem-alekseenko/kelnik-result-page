@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Kelnik</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner"><a class="logo" href="#"><img class="logo__image" src="./images/logo.svg" alt="logo"></a>
+        <nav class="nav">   
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Объекты</span></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Компания</span></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Как купить</span></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Агентам</span></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Регионам</span></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Акции</span></a></li>
+            <li class="nav__item"><a class="nav__link" href="#"><span class="nav__text">Контакты</span></a></li>
+          </ul>
+        </nav>
+        <div class="contacts header__contacts"><a class="phone contacts__phone" href="tel:8888888898"><span>8 888 88 88 98</span></a>
+          <div class="contacts__text">Звони скорее!</div>
+        </div>
+        <div class="toggle-menu"><span class="toggle-menu__line"></span><span class="toggle-menu__line"></span><span class="toggle-menu__line"></span><span class="toggle-menu__line"></span></div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="container">
+        <h1 class="container__title">Найдено 666 квартир</h1>
+      </div>
+      <div class="content__flats container">
+        <div class="sorter content__sorter"><span class="sorter__label">Сортировать по:</span>
+          <ul class="sorter__list">
+            <li class="sorter__item">
+              <button class="sorter__button sort-price"><span class="sorter__title">Цене</span><span class="sorter__icon"><img class="sorter__icon-arrow" src="./images/sort-arrow.svg" alt="sort-arrow"></span></button>
+            </li>
+            <li class="sorter__item">
+              <button class="sorter__button sort-rooms"><span class="sorter__title">Комнатам</span><span class="sorter__icon"><img class="sorter__icon--arrow" src="./images/sort-arrow.svg" alt="sort-arrow"></span></button>
+            </li>
+          </ul>
+        </div>
+        <div class="content__flats-cards">           </div>
+        <div class="content__more">
+          <button class="button content__more-results">Показать ещё 20                        </button>
+        </div>
+      </div>
+    </section>
+    <div class="subscribe container">
+      <div class="subscribe__desc">
+        <div class="subscribe__title">Успей купить!</div>
+        <div class="subscribe__text">Подпишись и успей словить все акции</div>
+      </div>
+      <form class="form subscribe-form" method="post">
+        <div class="form__fields subscribe__form-fields">
+          <input class="subscribe__email" id="subscribe__email" type="email" name="email" placeholder="E-mail" required pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/">
+          <label class="is-hidden" for="subscribe__email">Необходимо ввести email</label>
+          <label class="check subscribe__checkbox">подписаться на новости
+            <input class="check__input is-hidden" id="agreement" type="checkbox" name="agreement"><span class="check__box"></span>
+          </label>
+        </div>
+        <div class="subscribe__button-wrap">
+          <button class="button subscribe-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="backtotop"></div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
